@@ -1,0 +1,75 @@
+Answer Key: Web Automation Basics Quiz
+What does the DOM stand for?
+Answer: b) Document Object Model
+
+Which tab in the developer console shows the DOM tree?
+Answer: c) Elements
+
+How do you open the developer console in a browser?
+Answer:
+
+Right-click on the page and select "Inspect"
+Press Ctrl + Shift + I (Windows) or Cmd + Option + I (Mac)
+What is the DOM?
+Answer: The DOM is a programming interface that represents the structure of a webpage. It allows scripts to update content, structure, and styles dynamically.
+
+True or False: The DOM updates automatically when changes are made to a webpage's HTML structure.
+Answer: True
+
+What is XPath?
+Answer: b) A way to locate elements in a web page
+
+Which of the following XPath expressions would locate a button with the text "Submit"?
+Answer: //button[text()='Submit']
+
+What is the difference between locating an element by id and class?
+Answer: id is unique and should refer to a single element, whereas class can be shared by multiple elements.
+
+True or False: An id can be used to locate multiple elements on the same page.
+Answer: False
+
+Which types of elements are best to locate for automation?
+Answer:
+
+Elements with unique id
+Elements with clear and descriptive class names
+What is the purpose of Driver.FindElement?
+Answer: b) To find the first matching element on a webpage
+
+Which method would you use to find multiple matching elements?
+Answer: Driver.FindElements
+
+Fill in the blank: The Driver.FindElement method returns a(n) Exception if no element is found.
+
+Write an example of using Driver.FindElement to click on a button with the ID submitButton:
+Answer:
+
+csharp
+Copy
+Edit
+Driver.FindElement(By.Id("submitButton")).Click();
+Which of the following is a valid way to locate an element using CSS Selectors?
+Answer:
+Driver.FindElement(By.CssSelector(".button-class"))
+What is a viewport in web automation?
+Answer: a) The visual portion of a webpage that is visible to the user
+
+True or False: The viewport size can affect the visibility of some elements during automation.
+Answer: True
+
+Why is it important to understand the DOM when automating web tests?
+Answer: The DOM allows you to understand the structure of the webpage, enabling you to locate and interact with elements programmatically.
+
+Write a short explanation of when you might use an XPath locator over a CSS Selector:
+Answer: XPath is useful for locating elements with complex hierarchies or when attributes like text need to be matched. It offers flexibility that CSS Selectors don’t provide.
+
+True or False: Automation tests can fail if the element you are trying to locate is not currently in the viewport.
+Answer: True
+
+Bonus Question: Fill out a login form using Selenium
+Answer:
+csharp
+Copy
+Edit
+Driver.FindElement(By.Id("username")).SendKeys("YourUsername");
+Driver.FindElement(By.ClassName("password")).SendKeys("YourPassword");
