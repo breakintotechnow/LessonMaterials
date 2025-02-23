@@ -1,0 +1,6 @@
+Module 8: Integrating CI/CD Pipelines
+
+What is CI/CD?
+Setting Up Jenkins for Selenium
+Integrating with GitHub Actions or Azure
+QUIZ: Module 8
